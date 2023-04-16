@@ -14,6 +14,10 @@ module.exports = {
         "dark-400": "#343a40",
         "dark-500": "#212529",
       },
+      container: {
+        center: true,
+        padding: '2rem',
+      },
     }
 
   },

@@ -1,0 +1,61 @@
+.board__container {
+  height: 100%;
+  @apply py-5;
+}
+
+.board__list {
+  @apply h-full flex flex-wrap gap-1 items-center justify-between;
+}
+
+.board {
+  @apply h-[80vh] bg-dark-400 rounded-md overflow-y-auto;
+  @apply w-[100%];
+  @apply sm:w-[49%];
+  @apply lg:w-1/4;
+}
+
+.board {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.board::-webkit-scrollbar {
+  display: none;
+}
+
+.board__title {
+  @apply flex items-center justify-between p-4 border-b-[1px] border-solid border-gray-500 text-sm;
+}
+
+.board__items {
+  @apply p-2 flex flex-col gap-y-2;
+}
+
+.board__item {
+  @apply gap-y-2 bg-dark-300 rounded-sm cursor-pointer p-2;
+}
+
+.level {
+  @apply text-xs w-auto px-2 py-1 rounded-lg bg-[#F6628E];
+  /* #F6628E - high, #5EEBDB - low, #3782F1 - medium  */
+}
+
+.Low {
+  @apply bg-[#5EEBDB];
+}
+
+.Medium {
+  @apply bg-[#3782F1];
+}
+
+.High {
+  @apply bg-[#F6628E];
+}
+
+.title {
+  @apply my-2 text-sm;
+}
+
+.createdAt {
+  @apply flex justify-end text-xs text-right;
+}
